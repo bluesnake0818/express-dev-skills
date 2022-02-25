@@ -5,11 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <title><%= title %></title>
+  <title>Express Skill</title>
 </head>
 <body>
-  <h1><%= title %></h1>
-  <!-- Add this line -->
-  <a href="/skills">Skill List</a>  
+	<h1>Skills</h1>
+  <% if(error) { %>
+    <h2><%= error %></h2>
+  <% } else { %>
+    <h2>Skill #<%= skill._id %></h2>
+    <h3><%= skill.text %></h3>
+    <p>Level: <%= skill.level %></p>
+  <% } %>
+	<a href="/skills">Go back</a>
 </body>
 </html>
