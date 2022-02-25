@@ -45,5 +45,3 @@ export {
   create,
   deleteSkill as delete,
 }
-
-// comment
