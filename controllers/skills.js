@@ -28,13 +28,23 @@ function create(req, res) {
   console.log(req.body)
   skillDb.create(req.body, function(error, skill) {
 		// Notice we are doing a redirect here!
-    res.redirect('/skills')
+    res.redirect('/skills/index')
   })
 }
 
 function deleteSkill(req, res) {
   skillDb.findByIdAndDelete(req.params.id, function(error, skill) {
-    res.redirect('/skills')
+    res.redirect('/skills/index')
+  })
+}
+
+function editSkill (req, res) {
+  res.render('skills/new')
+}
+
+function updateSkill(req, res) {
+  skillDb.update(req.body, function(error, skill) {
+    res.redirect('/skills/index')
   })
 }
 
@@ -44,6 +54,8 @@ export {
   newSkill as new,
   create,
   deleteSkill as delete,
+  editSkill as edit,
+  updateSkill as update,
 }
 
 // comment

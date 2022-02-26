@@ -18,4 +18,12 @@ a {
 	
 li {
   list-style: none;
+  margin-top: 20px;
 }
+
+/* #monkey{
+  background-image: url("/assets/designs_monkey.png");
+  width: 90px; 
+  height: 90px;
+  background-size: 90px;
+} */

@@ -9,6 +9,9 @@ router.get('/new', skillsCtrl.new)
 router.get('/:id', skillsCtrl.show)
 router.post('/', skillsCtrl.create)
 router.delete('/:id', skillsCtrl.delete)
+// GET 
+router.get('/:id/edit', skillsCtrl.edit)
+router.put('/:id', skillsCtrl.update)
 
 export {
   router

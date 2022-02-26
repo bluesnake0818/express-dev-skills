@@ -59,5 +59,6 @@ export {
 	find,
   findById,
   create, 
-  findByIdAndDelete
+  findByIdAndDelete,
+  
 }

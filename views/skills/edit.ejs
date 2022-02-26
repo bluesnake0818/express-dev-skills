@@ -8,11 +8,11 @@
   <title>Express Skill</title>
 </head>
 <body>
-  <h1>New Skill</h1>
-  <form action="/skills" method="POST" autocomplete="off">
+  <h1>Edit Skill</h1>
+  <form action="/skills/<%= skill._id %> " method="PUT" autocomplete="off">
     <input type="text" name="text">
-    <button type="submit">Save Skill</button>
+    <button type="submit">Save Changes</button>
   </form>
-  <a href="/">Go back to Home</a>
+  <a href="/">Go back to Skill</a>
 </body>
 </html>

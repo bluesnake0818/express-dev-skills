@@ -63,3 +63,14 @@ app.use(function (err, req, res, next) {
 export {
   app
 }
+
+/* 
+1. Use EJS partial views to make your templates more DRY (see link in the Reference section of the lesson) or this link.
+2. Add styling or use a CSS framework to make the app look better
+3. On the **show** view, display an *Edit Skill* link that, when clicked, displays an **edit** view that displays a form for editing that Dev Skill.
+4. When the edit Dev Skill form is submitted, the skill should be updated in the “database” and redirect the user back to the **show** view.
+5. Elementary vs. Advanced chosen by user. 
+6. Replace Fake DB by MongoDB
+// 7. Links and back links
+
+*/
