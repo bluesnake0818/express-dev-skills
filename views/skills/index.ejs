@@ -8,7 +8,7 @@
   <title>Express Skill</title>
 </head>
 <body>
-  <h1>Skills as of <%= time %> </h1>
+  <h1>Monkey's List of Dev Skills</h1>
   <% if(error) { %>
     <h2><%= error %></h2>
   <% } %>
@@ -28,6 +28,7 @@
       </li>
     <% }) %>
   </ul>
-  <a href="/skills/new">Add Skill</a>
+  <p>Last Update: <%= time %> </p>
+  <a href="/">Go back to Home</a>
 </body>
 </html>
