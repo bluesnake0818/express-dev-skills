@@ -16,6 +16,12 @@
     <h3><%= skill.text %></h3>
     <p>Level: <%= skill.level %></p>
   <% } %>
-	<a href="/skills">Go back to list</a>
+  <ul>
+  <li><a href="/skills">Go back to list</a></li>
+	<li><a href="/skills/<%= skill._id %>/edit">Edit skill</a></li>
+  </ul>
 </body>
 </html>
+
+
+<!-- On the **show** view, display an *Edit Skill* link that, when clicked, displays an **edit** view that displays a form for editing that Dev Skill. -->
